@@ -1,50 +1,20 @@
-import java.util.Scanner;
+//Nombre: Sebastian Nevarez Romano
+//Matricula: 14970
+//06/02/2025
+//piedra, papel o tijera
  
-public class ppt
+import java.util.Random;
+
+
+public class Ppt
 {
-    public static void main(String args[])
-    {
-        System.out.println("Juego piedra-papel-tijera");
-        Scanner teclado = new Scanner(System.in);
- 
-        int seleccionCompu = (int)(Math.random() * 3) + 1;
-        System.out.println("La computadora ya escogio...");
- 
-        System.out.print("Indique su seleccion [1=Piedra, 2=Papel, 3=Tijera]: ");
-        int seleccionUsuario = teclado.nextInt();
- 
-        System.out.print("La computadora habia escogido: ");
-        switch ( seleccionCompu )
-        {
-            case 1:
-                System.out.println("Piedra");
-                switch ( seleccionUsuario )
-                {
-                   case 1: System.out.println("Empate!"); break;
-                   case 2: System.out.println("Usted gana!"); break;
-                   case 3: System.out.println("La computadora gana!"); break;
-                }
-                break;
- 
-            case 2:
-                System.out.println("Papel");
-                switch ( seleccionUsuario )
-                {
-                   case 1: System.out.println("La computadora gana!"); break;
-                   case 2: System.out.println("Empate!"); break;
-                   case 3: System.out.println("Usted gana!"); break;
-                }
-                break;
- 
-            case 3:
-                System.out.println("Tijera");
-                switch ( seleccionUsuario )
-                {
-                   case 1: System.out.println("Usted gana!"); break;
-                   case 2: System.out.println("La computadora gana!"); break;
-                   case 3: System.out.println("Empate!"); break;
-                }
-                break;
-        }
-    }
+    public static void main(String args[]){
+        String[] ppt ={"piedra","papel","tijera"};
+
+        //genera un numero random
+        Random rand = new Random();
+        int indice = rand.nextInt(3);
+
+        System.out.println("seleccionado: " + ppt[indice]);
+}
 }
