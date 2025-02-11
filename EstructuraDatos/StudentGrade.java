@@ -31,10 +31,10 @@ public class StudentGrade {
         StudentGrade student = new StudentGrade();
         
         
-        int partial1 = student.calculatePartialGrade(80, 90);
+        int partial1 = student.calculatePartialGrade(85, 90);
         System.out.println("Calificación del primer parcial: " + partial1);
     
-        int finalGrade = student.calculateFinalGrade(80, 85, 90, 88);
+        int finalGrade = student.calculateFinalGrade(80, 75, 90, 85);
         System.out.println("Calificación final del semestre: " + finalGrade);
     
         String attendanceStatus = student.checkFailureByAbsences(64, 7);
