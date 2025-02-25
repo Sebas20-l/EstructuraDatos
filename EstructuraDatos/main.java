@@ -1,8 +1,10 @@
 
-//import java.util.function.ObjIntConsumer;
 
-public class main{
-    public static void main(String[] args) {
+//import java.awt.datatransfer.SystemFlavorMap;
+//import java.util.Scanner;
+
+public class Main{
+    //public static void main(String[] args) {
         //ppt.main(args);
     //}
     //public static void main(String[] args){
@@ -16,11 +18,37 @@ public class main{
         //System.out.println(fullname);
 
     //}
-
-    int result=ObjStudentGrade.calculateFinalGrade(80,75,90,85);
     
-        System.out.println("la calificacion del smestre es"+ result);
+//  public static void main(String[] args) {
+
+  //Scanner objScanner=new Scanner(SystemFlavorMap.in);
+  //System.out.println("ingrese area del circulo");
+  //double radius=objScanner.nextDouble();
+
+  //AreaCircle objAreaCircle=new AreaCircle();
+  //double area=objAreaCircle.ClaculateArea(radius);
+  //System.out.println(String.format("el area del circulo es %f",area));
+  //objScanner.close();
+
+
+//}
+
+//ArraylistExample objArraylist=new ArraylistExample();
+
+//objArraylist.addcars("mazda");
+public static void main(String[] args) {
+//multideimesional objMultideimesional=new multideimesional();
+//objMultideimesional.printbidemensional();
+//exerciseParNone objpParNone=new exerciseParNone();
+//objpParNone.contarNumeros(null);
+//}
+//public static void main(String[] args){
+        GradeCalculationPartial.main(args);
+
 }
 
 }
+
+
+
 
