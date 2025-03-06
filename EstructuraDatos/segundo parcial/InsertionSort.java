@@ -14,7 +14,11 @@ public class InsertionSort {
             operaciones++;
         }
         return operaciones;
-    }
+    } 
+
+
+
+
     
     public static void main(String args[]) {
         int peorCaso[] = {9, 8, 7, 6, 5, 4, 3, 2, 1,0};
