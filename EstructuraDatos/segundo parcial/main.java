@@ -1,28 +1,50 @@
+import java.util.HashMap;
 public class main {
     
+
+public class Main {
     public static void main(String[] args) {
-        // Peor caso: arreglo en orden inverso
-        int[] arr = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
-        
-        System.out.println("Array original:");
-        BubbleSortExample.printArray(arr);
-        
-        System.out.println("Ordenando con Bubble Sort...");
-        BubbleSortExample.bubbleSort(arr);
-        
-        System.out.println("Array ordenado:");
-        BubbleSortExample.printArray(arr);
+        HashMap<String, String> capitalCities = new HashMap<>();
+        capitalCities.put("England", "London");
+        capitalCities.put("Germany", "Berlin");
+        capitalCities.put("Norway", "Oslo");
+        capitalCities.put("USA", "Washington DC");
 
-        // Cálculo de complejidad en el peor caso O(n^2)
-        int n = arr.length;
-        int maxComparisons = (n * (n - 1)) / 2; // Fórmula de comparaciones en Bubble Sort
-        int maxSwaps = maxComparisons; // En el peor caso, cada comparación resulta en un intercambio
+        mostrarCapitales(capitalCities);
+    }
 
-        System.out.println("\nCálculo de Big O:");
-        System.out.println("O(n^2) comparaciones teóricas: " + maxComparisons);
-        System.out.println("O(n^2) intercambios teóricos: " + maxSwaps);
+    public static void mostrarCapitales(HashMap<String, String> map) {
+        for (String country : map.keySet()) {
+            System.out.println("País: " + country + ", Capital: " + map.get(country));
+        }
     }
 }
+
+
+    
+    //public static void main(String[] args) {
+        // Peor caso: arreglo en orden inverso
+        //int[] arr = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+        
+        //System.out.println("Array original:");
+        //BubbleSortExample.printArray(arr);
+        
+        //System.out.println("Ordenando con Bubble Sort...");
+        //BubbleSortExample.bubbleSort(arr);
+        
+        //System.out.println("Array ordenado:");
+        //BubbleSortExample.printArray(arr);
+
+        // Cálculo de complejidad en el peor caso O(n^2)
+        //int n = arr.length;
+        //int maxComparisons = (n * (n - 1)) / 2; // Fórmula de comparaciones en Bubble Sort
+        //int axSwaps = maxComparisons; // En el peor caso, cada comparación resulta en un intercambio
+
+        //System.out.println("\nCálculo de Big O:");
+        //System.out.println("O(n^2) comparaciones teóricas: " + maxComparisons);
+        //System.out.println("O(n^2) intercambios teóricos: " + maxSwaps);
+    }
+
 
 //public static void main(String args[]) {
     int peorCaso[] = {9, 8, 7, 6, 5, 4, 3, 2, 1,0};
