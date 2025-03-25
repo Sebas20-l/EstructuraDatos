@@ -1,6 +1,7 @@
 
 
 public class main2 {
+     /*
         public static void main(String[] args) {
             // Crear una instancia de Capitales
             HashMapExample miCapitales = new HashMapExample();
@@ -11,6 +12,11 @@ public class main2 {
     
             System.out.println("\nLista de todas las capitales:");
             miCapitales.mostrarCapitales();
+        }
+         */
+        public static void main(String[] args) {
+            IndexdSearch objIndexdSearch=new IndexdSearch();
+            objIndexdSearch.search();
         }
     }
 
