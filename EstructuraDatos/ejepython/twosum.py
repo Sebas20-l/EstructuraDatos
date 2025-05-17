@@ -11,7 +11,7 @@ class Solution:
 nums = [2, 7, 11, 15]
 target = 9
 
-# Crear la instancia y llamar el método
+
 sol = Solution()
 result = sol.twoSum(nums, target)
 
